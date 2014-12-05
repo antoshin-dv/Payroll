@@ -24,9 +24,6 @@ endif()
 
 if(GCC_LIKE_COMPILER)
 	add_definitions(-std=c++11)
-	if("${CMAKE_CXX_COMPILER_ID}" MATCHES "Clang")
-		add_definitions(-stdlib=lib++)
-	endif()
 endif()
 
 enable_testing()
